@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Buttons</title>
+
+    <link rel="stylesheet" href="buttons.css">
+
+<!-- Google Font 'Red Hat Display' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+    <form action="URL-address">
+
+        <h1>Create an account!</h1>
+
+        <p>Try to set the site colors, heading styles and margins. Feel free to clean up the code and change the content.</p>
+
+            <select name="pickCountry" required>.
+                <option value="">Pick a country</option>
+                <option value="Polen">Polen</option>
+                <option value="Italia">Italia</option>
+                <option value="Hellas">Hellas</option>
+                <option value="Rogaland">Rogaland</option>
+            </select>
+
+        <div class="section border-top">
+            <h2>Account details</h2>
+            
+            <div class="columns">
+                <div class="col-left">
+                    <label for="fname">Fornavn: </label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div class="col-right">
+                    <label for="lname">Etternavn: </label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+            </div>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="birthday">Fødselsdato:</label>
+            <input type="date" id="birthday" name="birthday">
+            
+        </div>
+
+        <div class="section border-top">
+            <h2>Create a password</h2>
+
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" minlength="8">
+        </div>
+
+        <div class="section border-top">
+            <h2>Preferences</h2>
+        
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+
+            <label>What would you like to drink?</label>
+            <input type="radio" value="brus" name="rbDrikke">Coca Cola
+            <input type="radio" value="brus" name="rbDrikke">Pepsi
+            <input type="radio" value="brus" name="rbDrikke">Water
+
+            <label for="vol">Volume (between 0 and 100 dB):</label>
+            <input type="range" id="vol" name="vol" min="0" max="100">
+        </div>
+
+        <div class="section border-top">
+            <h2>Do you accept our terms & conditions?</h2>
+            <input type="checkbox" name="t&a">Yes, I accept the <a href="buttons.html">terms and conditions</a>.
+        </div>
+
+        <div class="section">
+            <input class="form-button" type="submit" value="Create account">
+        </div>
+
+    </form>
+    </div>
+</body>
+
+</html>
